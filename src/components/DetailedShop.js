@@ -32,7 +32,7 @@ export default function DetailedShop({ value, isOpen, onClose }) {
               h="30rem"
               boxShadow="md"
               borderRadius="0.2rem"
-              src={`/img_res/${value.name}/${count}.PNG`}
+              src={`https://beve2-march0320.vercel.app/img_res/${value.name}/${count}.PNG`}
               objectFit="fill"
             />
             <Flex direction="row" justify="center" m={1}>
