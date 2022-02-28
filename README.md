@@ -25,3 +25,7 @@
 
 + 상세
 <img src="https://user-images.githubusercontent.com/85687229/156021728-c5d97c02-fb25-4e00-ab33-adf0605fe5a3.gif">
+
+
+## url
+https://beve2-march0320.vercel.app/
