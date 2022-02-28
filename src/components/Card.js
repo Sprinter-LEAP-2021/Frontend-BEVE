@@ -23,8 +23,8 @@ export default function Card({ value }) {
           onClick={onOpen}
         >
           <DetailedShop onOpen={onOpen} isOpen={isOpen} onClose={onClose} value={value}/>
-          { `img_res/${value.name}/1.png` ? (
-            <Image src={`img_res/${value.name}/1.png`} objectFit="fill" maxW="15vw" maxH="13vw" w="15vw" h="13vw" />
+          { `../../public/img_res/${value.name}/1.png` ? (
+            <Image src={`../../public/img_res/${value.name}/1.png`} objectFit="fill" maxW="15vw" maxH="13vw" w="15vw" h="13vw" />
           ):(<Image src={noimage.src} objectFit="fill" maxW="15vw" maxH="13vw" w="15vw" h="13vw" />)
           }
           <Box m={2} textAlign="left">
@@ -52,8 +52,8 @@ export default function Card({ value }) {
           onClick={onOpen}
         >
           <DetailedShop onOpen={onOpen} isOpen={isOpen} onClose={onClose} value={value}/>
-           { `img_res/` + tmp_t[0] + `/1.png` ? (
-             <Image src={`img_res/` + tmp_t[0] + `/1.png`} objectFit="fill" maxW="15vw" maxH="13vw" w="15vw" h="13vw" />
+           { `../../public/img_res/` + tmp_t[0] + `/1.png` ? (
+             <Image src={`../../public/img_res/` + tmp_t[0] + `/1.png`} objectFit="fill" maxW="15vw" maxH="13vw" w="15vw" h="13vw" />
           ):(<Image src={noimage.src} objectFit="fill" maxW="15vw" maxH="13vw" w="15vw" h="13vw" />)
           }
 
