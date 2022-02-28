@@ -27,7 +27,7 @@ export default function Card({ value }) {
           {`../../public/img_res/${value.name}/1.png` ? (
         <>
         <Image src={ceek.src} objectFit="fill" maxW="15vw" maxH="13vw" w="15vw" h="13vw" />
-            <Image src={`../../public/img_res/${value.name}/1.png`} objectFit="fill" maxW="15vw" maxH="13vw" w="15vw" h="13vw" />
+            <Image src={`https://beve2-march0320.vercel.app/img_res/${value.name}/1.PNG`} objectFit="fill" maxW="15vw" maxH="13vw" w="15vw" h="13vw" />
           </>):(<Image src={noimage.src} objectFit="fill" maxW="15vw" maxH="13vw" w="15vw" h="13vw" />)
           }
           <Box m={2} textAlign="left">
