@@ -1,4 +1,4 @@
-# Be Vegans! BEVE
+# Be Vegans! BEVE :herb:
 2021-2학기 LEAP 공모전 선발
 
 
