@@ -4,9 +4,9 @@ import DetailedShop from "./DetailedShop";
 
 export default function Card({ value }) {
   const { isOpen, onOpen, onClose } = useDisclosure()
-  const tmp = value.name;
-  const tmp_t = tmp.split(" (");
-
+  const tmp_t = value.name.split("(")[0].trim;
+  var imageFile = new File(`/img_res/${value.name}/1.PNG`);
+  var imageFranFile = new File(`/img_res/` + tmp_t + `/1.PNG`);
   if (value.franchise == 0) {
       return (
         <Box
@@ -22,7 +22,7 @@ export default function Card({ value }) {
           onClick={onOpen}
         >
           <DetailedShop onOpen={onOpen} isOpen={isOpen} onClose={onClose} value={value}/>
-          {`https://beve2-march0320.vercel.app/img_res/${value.name}/1.PNG` ? (
+          {imageFile.exists()? (
             <Image src={`https://beve2-march0320.vercel.app/img_res/${value.name}/1.PNG`} objectFit="fill" maxW="15vw" maxH="13vw" w="15vw" h="13vw" />
           ):(<Image src={`https://beve2-march0320.vercel.app/img/noimage.jpg`} objectFit="fill" maxW="15vw" maxH="13vw" w="15vw" h="13vw" />)
           }
@@ -51,7 +51,7 @@ export default function Card({ value }) {
           onClick={onOpen}
         >
           <DetailedShop onOpen={onOpen} isOpen={isOpen} onClose={onClose} value={value}/>
-           { `https://beve2-march0320.vercel.app/img_res/` + tmp_t[0] + `/1.PNG` ? (
+           { imageFranFile.exists() ? (
              <Image src={`https://beve2-march0320.vercel.app/img_res/` + tmp_t[0] + `/1.PNG`} objectFit="fill" maxW="15vw" maxH="13vw" w="15vw" h="13vw" />
           ):(<Image src={`https://beve2-march0320.vercel.app/img/noimage.jpg`} objectFit="fill" maxW="15vw" maxH="13vw" w="15vw" h="13vw" />)
           }
