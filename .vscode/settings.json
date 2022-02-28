@@ -4,6 +4,7 @@
   "editor.formatOnPaste": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnType": true,
-  "prettier.configPath": ".prettierrc.json",
-  "prettier.prettierPath": "./.prettierrc.json"
+  "prettier.configPath": "C:\\Users\\youmi\\Desktop\\Frontend-BEVE\\.prettierrc.json",
+  "prettier.prettierPath": "./.prettierrc.json",
+  "prettier.ignorePath": ""
 }
