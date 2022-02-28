@@ -17,11 +17,11 @@
 
 
 ## 실행 영상
-+메인
++ 메인
 <img src="https://user-images.githubusercontent.com/85687229/156021111-07592798-13a2-411b-9537-e4b0e67acd85.gif">
 
-+필터
++ 필터
 <img src="https://user-images.githubusercontent.com/85687229/156021464-3c3ef761-082b-4b88-b16b-f76c8e3434ce.gif">
 
-+상세
++ 상세
 <img src="https://user-images.githubusercontent.com/85687229/156021728-c5d97c02-fb25-4e00-ab33-adf0605fe5a3.gif">
