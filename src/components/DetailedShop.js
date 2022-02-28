@@ -4,12 +4,11 @@ import { Box, Text, Flex, Spacer, Image, Modal,Button,
   ModalBody,
   ModalCloseButton } from "@chakra-ui/react";
 import React, { useState } from "react";
-import food from "../../public/img/food.png";
 import Map from "./Map";
 import {  VscCircleOutline,VscCircleFilled } from "react-icons/vsc";
-import ResultPage from "../../pages/ResultPage";
+
 export default function DetailedShop({ value, isOpen, onClose }) {
-  console.log(value);
+  
   const [count, setCount] = useState(1);
 
   const next = () => {
@@ -94,7 +93,7 @@ export default function DetailedShop({ value, isOpen, onClose }) {
               h="30rem"
               boxShadow="md"
               borderRadius="0.2rem"
-              src={`/img_res/${value.name}/${count}.png`}
+              src={`https://beve2-march0320.vercel.app/img_res/${value.name}/${count}.PNG`}
               objectFit="fill"
             />
             <Flex direction="row" justify="center" m={1}>
@@ -144,9 +143,7 @@ export default function DetailedShop({ value, isOpen, onClose }) {
           </ModalContent>
         </Modal>
       </>
-    );
-
-    
+    );       
   }
 }
 

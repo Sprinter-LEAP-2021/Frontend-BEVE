@@ -1,6 +1,6 @@
 /*global kakao*/
 import React, { useState, useEffect } from "react";
-import { Box, Text, Flex, Spacer } from "@chakra-ui/react";
+import { Box } from "@chakra-ui/react";
 import CurrentAddress from "./CurrentAddress";
 
 export default function CurrentLocation() {
@@ -20,7 +20,7 @@ export default function CurrentLocation() {
         setIsError(true);
     }
   }, []);
-  console.log(usePos);
+
   if(isError){
     return(<Box>사용자의 위치를 찾을 수 없습니다</Box>);
   }

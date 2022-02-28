@@ -1,5 +1,4 @@
 import { Flex, Spacer, Text } from "@chakra-ui/layout";
-import Fonts from "../../../theme/Fonts";
 import SearchForm from "../SearchForm";
 import CurrentLocation from "../location/CurrentLocation";
 
