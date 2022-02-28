@@ -1,8 +1,5 @@
-import { Image, Box, Text, Flex, IconButton, Button, Grid } from "@chakra-ui/react";
-import { useState,useEffect } from "react";
-import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
-import Card from "../Card";
-import axios from "axios";
+import { Box, Text } from "@chakra-ui/react";
+import { useState } from "react";
 
 export default function NearShops({ useLoc, isSeoul, usePos }) {
   console.log(useLoc.city);  //useLoc.city=구 useLoc.address=주소 isSeoul이 1이면 서울

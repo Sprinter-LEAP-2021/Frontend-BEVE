@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { useRecoilValue, useRecoilState } from "recoil";
 import axios from "axios";
 
-import { filterState, pageState, queryState, restaurantDataState, inputState } from "../states";
+import { pageState, queryState, restaurantDataState } from "../states";
 
 export default function useSearchRestaurants() {
   const [isLoading, setIsLoading] = useState(null);
@@ -11,14 +11,11 @@ export default function useSearchRestaurants() {
   const query = useRecoilValue(queryState);
   const page = useRecoilValue(pageState);
   const [restaurantData, setRestaurantData] = useRecoilState(restaurantDataState);
-  const [filter, setFilter] = useRecoilState(filterState);
-  const [inputText, setInputText] = useRecoilState(inputState);
   
   useEffect(() => {
     const fetchData = async () => {
       setIsLoading(true);
       setIsError(false);
-      console.log(query);
 
       const response = await axios.get(`https://beve-deploy.vercel.app/api/posts?area=${query.area}&stage=${query.stage}&type=${query.type}&inputText=${query.inputText}&page=${page}`)
         .catch(error => {
