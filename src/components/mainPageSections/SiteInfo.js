@@ -20,7 +20,7 @@ export default function SiteInfo() {
         <Text>YEONHEE JUNG : spig0126@gmail.com</Text>
         <Text>YOUMIN KIM : march032-@ewhain.net</Text>
         <Text>JUYEON KIM : kylakim@ewhain.net</Text>
-        <Text>JANG YESSEO : afterhours@ewhain.net</Text>
+        <Text>YESEO JANG : afterhours@ewhain.net</Text>
       </Flex>
     </Flex>
   );
