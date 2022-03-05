@@ -25,55 +25,67 @@ export default function DetailedShop({ value, isOpen, onClose,franName }) {
         <Modal size="xl" isOpen={isOpen} onClose={onClose}>
           <ModalOverlay color="green" />
           <ModalContent>
-            {value.franchise == 0?
-              <Image
+            {value.franchise == 0 ?
+              
+              
+              count == 1 ?
+                <>
+                <Image
                 w="50rem"
                 h="30rem"
                 boxShadow="md"
                 borderRadius="0.2rem"
                 src={`https://beve2-march0320.vercel.app/img_res/${value.name}/${count}.PNG`}
                 objectFit="fill"
-              />:  <Image
+                  /> 
+                   <Flex direction="row" justify="center" m={1}>
+                  <Button
+                    p={1}
+                    as={VscCircleFilled}
+                    size="sm"
+                    variant="ghost"
+                    color="#3E603B"
+                  />
+                  <Button
+                    p={1}
+                    as={VscCircleOutline}
+                    onClick={next}
+                    size="sm"
+                    variant="ghost"
+                    color="#3E603B"
+                    />
+                  </Flex></> :
+                <><Image
+                w="50rem"
+                h="30rem"
+                boxShadow="md"
+                borderRadius="0.2rem"
+                src={`https://beve2-march0320.vercel.app/img_res/${value.name}/${count}.PNG`}
+                objectFit="fill"
+                /> 
+                   <Flex direction="row" justify="center" m={1}>
+                  <Button
+                    p={1}
+                    as={VscCircleOutline}
+                    onClick={before}
+                    size="sm"
+                    variant="ghost"
+                    color="#3E603B"
+                  />
+                  <Button
+                    p={1}
+                    as={VscCircleFilled}
+                    size="sm"
+                    variant="ghost"
+                    color="#3E603B"
+                  /></Flex></>:  <Image
                 w="50rem"
                 h="30rem"
                 boxShadow="md"
                 borderRadius="0.2rem"
                 src={`https://beve2-march0320.vercel.app/img_res/${franName}/1.PNG`}
               />}
-            <Flex direction="row" justify="center" m={1}>
-              {count == 1 ?
-                <>
-              <Button
-                p={1}
-                as={VscCircleFilled}
-                size="sm"
-                variant="ghost"
-                color="#3E603B"
-              />
-              <Button
-                p={1}
-                as={VscCircleOutline}
-                onClick={next}
-                size="sm"
-                variant="ghost"
-                color="#3E603B"
-              />
-              </>:<><Button
-                p={1}
-                as={VscCircleOutline}
-                onClick={before}
-                size="sm"
-                variant="ghost"
-                color="#3E603B"
-              />
-              <Button
-                p={1}
-                as={VscCircleFilled}
-                size="sm"
-                variant="ghost"
-                color="#3E603B"
-              /></> }
-            </Flex>
+          
             <ModalCloseButton borderRadius="3rem" backgroundColor="#3E603B" color="white" />
             <ModalBody>
               <Flex direction="column" justify="center">
