@@ -2,7 +2,6 @@ import { Box, Text } from "@chakra-ui/react";
 import { useState } from "react";
 
 export default function NearShops({ useLoc, isSeoul, usePos }) {
-  console.log(useLoc.city);  //useLoc.city=구 useLoc.address=주소 isSeoul이 1이면 서울
   
   const [isLoading, setIsLoading] = useState(null);
   const [isError, setIsError] = useState(null);

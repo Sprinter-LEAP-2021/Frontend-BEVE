@@ -17,7 +17,7 @@ export default function useSearchRestaurants() {
       setIsLoading(true);
       setIsError(false);
 
-      const response = await axios.get(`https://beve-deploy.vercel.app/api/posts?area=${query.area}&stage=${query.stage}&type=${query.type}&inputText=${query.inputText}&page=${page}`)
+      const response = await axios.get(`https://beve2-march0320.vercel.app/api/posts?area=${query.area}&stage=${query.stage}&type=${query.type}&inputText=${query.inputText}&page=${page}`)
         .catch(error => {
         setIsError(true);
         console.log(error.response.data);
